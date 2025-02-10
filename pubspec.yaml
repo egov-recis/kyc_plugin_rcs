@@ -1,7 +1,7 @@
 name: kyc_plugin_rcs
 description: "A Plugin Project From RCS As Base KYC Feature."
 version: 0.0.1
-homepage:
+homepage: https://github.com/egov-recis/kyc_plugin_rcs
 
 environment:
   sdk: ^3.6.1
