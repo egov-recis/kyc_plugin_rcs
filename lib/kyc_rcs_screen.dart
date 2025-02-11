@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kyc_plugin_rcs/registration_screen.dart';
 
 class KycRcsScreen extends StatefulWidget {
   final void Function() onFinish;
@@ -25,6 +26,7 @@ class _KycRcsScreenState extends State<KycRcsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           Expanded(
@@ -128,6 +130,7 @@ class _KycRcsScreenState extends State<KycRcsScreen> {
                     ),
                   ],
                 ),
+                SizedBox(height: 24),
                 AnimatedSwitcher(
                   duration: const Duration(milliseconds: 800),
                   transitionBuilder: (
@@ -161,7 +164,7 @@ class _KycRcsScreenState extends State<KycRcsScreen> {
                     right: 20,
                   ),
                   child: SizedBox(
-                    height: 48,
+                    height: 54,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color(0xFF304FFE),
@@ -169,7 +172,15 @@ class _KycRcsScreenState extends State<KycRcsScreen> {
                       onPressed: () {
                         setState(() {
                           if (pageNum == 2) {
-                            widget.onFinish();
+                            Navigator.pop(context);
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => RegistrationScreen(
+                                  onFinish: widget.onFinish,
+                                ),
+                              ),
+                            );
                           } else {
                             pageNum++;
                           }
