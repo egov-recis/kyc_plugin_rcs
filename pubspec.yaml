@@ -1,6 +1,6 @@
 name: kyc_plugin_rcs
 description: "A Plugin Project From RCS As Base KYC Feature."
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/egov-recis/kyc_plugin_rcs
 
 environment:
@@ -12,8 +12,8 @@ dependencies:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
   pin_code_fields: ^8.0.1
-  camera: ^0.11.1
   image_cropper: ^4.0.1
+  camerawesome: ^2.1.0
 
 dev_dependencies:
   flutter_test:

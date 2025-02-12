@@ -9,3 +9,8 @@
 ## 0.0.3
 
 * TODO: Add assets
+
+## 0.0.4
+
+* TODO: Add camera
+
