@@ -1,27 +1,46 @@
 PODS:
+  - camera_avfoundation (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
+  - image_cropper (0.0.4):
+    - Flutter
+    - TOCropViewController (~> 2.6.1)
   - integration_test (0.0.1):
     - Flutter
   - kyc_plugin_rcs (0.0.1):
     - Flutter
+  - TOCropViewController (2.6.1)
 
 DEPENDENCIES:
+  - camera_avfoundation (from `.symlinks/plugins/camera_avfoundation/ios`)
   - Flutter (from `Flutter`)
+  - image_cropper (from `.symlinks/plugins/image_cropper/ios`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
   - kyc_plugin_rcs (from `.symlinks/plugins/kyc_plugin_rcs/ios`)
 
+SPEC REPOS:
+  trunk:
+    - TOCropViewController
+
 EXTERNAL SOURCES:
+  camera_avfoundation:
+    :path: ".symlinks/plugins/camera_avfoundation/ios"
   Flutter:
     :path: Flutter
+  image_cropper:
+    :path: ".symlinks/plugins/image_cropper/ios"
   integration_test:
     :path: ".symlinks/plugins/integration_test/ios"
   kyc_plugin_rcs:
     :path: ".symlinks/plugins/kyc_plugin_rcs/ios"
 
 SPEC CHECKSUMS:
+  camera_avfoundation: dd002b0330f4981e1bbcb46ae9b62829237459a4
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  image_cropper: a3291c624a953049bc6a02e1f8c8ceb162a24b25
   integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
   kyc_plugin_rcs: 6002d11987f9ad99921eac98b7f5849ba4a7f5e0
+  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 

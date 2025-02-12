@@ -24,8 +24,8 @@ class LandingPageScreen extends StatefulWidget {
 class _LandingPageScreenState extends State<LandingPageScreen> {
   List<String> listText = [
     "Phone verified",
-    "Checking up document ID",
     "Verifying photo",
+    "Checking up document ID",
   ];
   // 1: Not yet | 2: Loading | 3: Success
 

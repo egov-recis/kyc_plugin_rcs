@@ -1,5 +1,7 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
+import 'camera_screen.dart';
 import 'landing_page_screen.dart';
 
 class VerificationScreen extends StatefulWidget {
@@ -163,7 +165,20 @@ class _VerificationScreenState extends State<VerificationScreen> {
             ),
             SizedBox(height: 40),
             GestureDetector(
-              onTap: () {
+              onTap: () async {
+                // final cameras = await availableCameras();
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => CameraScreen(
+                //       type: '',
+                //       camera: cameras.firstWhere(
+                //         (element) =>
+                //             element.lensDirection == CameraLensDirection.front,
+                //       ),
+                //     ),
+                //   ),
+                // );
                 setState(() {
                   pageNum = 2;
                   Navigator.push(
